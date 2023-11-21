@@ -1,0 +1,33 @@
+{
+  "name": "files-from-you-project",
+  "version": "1.0.0",
+  "description": "files from you mono repo",
+  "scripts": {
+    "start": "npm run start:client & npm run start:server & npm run start:dashboard",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start:dashboard": "cd dashboard && npm run dev",
+    "install-all": "npm run install:client && npm run install:server && npm run install:dashboard",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:dashboard": "cd dashboard && npm install",
+    "test-all": "npm run test:client && npm run test:server && npm run test:dashboard",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "test:dashboard": "cd dashboard && npm test",
+    "lint-all": "npm run lint:client && npm run lint:server && npm run lint:dashboard",
+    "lint:client": "cd client && npm run lint",
+    "lint:server": "cd server && npm run lint",
+    "lint:dashboard": "cd dashboard && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dannkkie/files-from-you.git"
+  },
+  "author": "Edmund Kwashie kpodogui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannkkie/files-from-you/issues"
+  },
+  "homepage": "https://github.com/dannkkie/files-from-you#readme"
+}
